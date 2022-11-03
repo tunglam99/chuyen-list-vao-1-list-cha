@@ -125,7 +125,7 @@ export class AppComponent implements OnInit {
       ],
     },
   ];
-  lam: any
+  lam: any;
   ngOnInit(): void {
     const a = this.input1.map((x) => {
       const b = this.input2.filter((data) => x.valueSCH === data.valueSCH2);
@@ -135,7 +135,7 @@ export class AppComponent implements OnInit {
         SCH: b,
       };
     });
-this.lam = a
+    this.lam = a;
     console.log(a);
   }
 }
